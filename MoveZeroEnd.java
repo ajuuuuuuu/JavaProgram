@@ -5,22 +5,17 @@ import java.util.Scanner;
 public class MoveZeroEnd {
     public static void moveZeroToEnd(int[] arr) {
         int index=0;
-       for(int i =0;i<arr.length-1;i++){
-         if(arr[i]==0){
-            System.out.println("arr[i]==0(   "+ arr[i] + "   == " + i+ "  )  done");
-            int temp=arr[i];
-            System.out.println("temp : arr[i] (   " + temp + " : " + arr[i]+"   )  done");
-            arr[i]=arr[arr.length-i-1];
-            System.out.println("arr[i]:arr[arr.length-i-1]   (  " + arr[i] + " : " + arr[arr.length-i-1]+"   )  done");
-            arr[arr.length-i-1]=temp;
-            System.out.println("arr[arr.length-i-1]:temp   (  " + arr[arr.length-i-1] + " : " + temp+"  )  done");
+       for(int i =0;i<arr.length;i++){
+         if(arr[i]!=0){
+           arr[index]=arr[i];
               index++;
-              System.out.println("index: " + index +"   done");
-
-              System.out.println(" ");
          }
          
        } 
+       while(index<arr.length){
+         arr[index]=0;
+         index++;
+       }
     }
 
     public static void main(String[] args) {
