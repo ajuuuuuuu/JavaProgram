@@ -21,5 +21,6 @@ public class RemoveDuplicate {
         for (int i = 0; i < newLength; i++) {
             System.out.print(nums[i] + " ");
         }
+        
     }
 }

@@ -9,6 +9,7 @@ public class SecondLargest {
                 System.out.println("arr[i]>largest: " + arr[i] + ">" + largest);
                 SecondLargest=largest;
               largest=arr[i];
+              
             }
              else if(arr[i]>SecondLargest && arr[i]!=largest){
                 System.out.println("arr[i]>SecondLargest && arr[i]<largest: " + arr[i] + ">" + SecondLargest + " && " + arr[i] + "<" + largest);
